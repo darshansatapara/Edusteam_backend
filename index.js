@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://edusteam-frontend.vercel.app"],
+    origin: ["http://localhost:5173", "https://edustream-frontend.vercel.app"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
   })
