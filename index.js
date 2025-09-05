@@ -11,11 +11,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: {
-      "http://localhost:3000": true,
-      "https://edusteam-frontend.vercel.app": true,
-    },
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: ["http://localhost:3000", "https://edusteam-frontend.vercel.app"],
+    credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
